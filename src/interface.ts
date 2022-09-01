@@ -52,48 +52,70 @@
 //   age: 5,
 // };
 
-interface Utils<T> {
-  name: string;
-  readonly email: string;
-  others: T;
-}
+// interface Utils<T> {
+//   name: string;
+//   readonly email: string;
+//   others: T;
+// }
 
-const student1: Utils<number> = {
-  name: "Rupak",
-  email: "rakesh@gmail.com",
-  others: 15,
-};
+// const student1: Utils<number> = {
+//   name: "Rupak",
+//   email: "rakesh@gmail.com",
+//   others: 15,
+// };
 
 // student1.name= "fdafdas"
 // student1.email= "fdasfdsa"
 
-const student2: Utils<boolean> = {
-  name: "Rupak",
-  email: "rakesh@gmail.com",
-  others: true,
-};
+// const student2: Utils<boolean> = {
+//   name: "Rupak",
+//   email: "rakesh@gmail.com",
+//   others: true,
+// };
 
-interface UserDetail {
-  father_name: string;
-  mother_name?: string | null;
-}
+// interface UserDetail {
+//   father_name: string;
+//   mother_name?: string | null;
+// }
 
-const student3: Utils<UserDetail> = {
-  name: "Rakesh",
-  email: "rakesh@gmail.com",
-  others: {
-    father_name: "rakesh",
-    // mother_name: "sit",
-  },
-};
-
-
-
-
-
-
-
+// const student3: Utils<UserDetail> = {
+//   name: "Rakesh",
+//   email: "rakesh@gmail.com",
+//   others: {
+//     father_name: "rakesh",
+//     // mother_name: "sit",
+//   },
+// };
 
 // null safety
 
 // console.log(student1.others)
+
+// interface Model {
+//   getFun: () => number;
+// }
+
+// const test: Model = {
+//   getFun: function (){
+//     return "fd"
+//   }
+// }
+
+//keyof
+// interface Staff {
+//   name: string;
+//   salary: number;
+// }
+// type staffKeys = keyof Staff;
+
+
+// typescript interface function
+// interface FunctionInterface {
+//   getFun: () => number;
+// }
+
+// const obj: FunctionInterface = {
+//   getFun: function () {
+//     return 5;
+//   },
+// };
